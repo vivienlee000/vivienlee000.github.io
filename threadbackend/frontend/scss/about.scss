@@ -1,0 +1,164 @@
+@import 'base';
+
+#mission {
+  padding-left: 5%;
+  padding-bottom: 8%;
+  padding-top: 5%;
+
+  #title {
+    font-family: $title-font;
+    font-size: 225%;
+    padding-bottom: 70%;
+    padding-top: 10%;
+    color: $logo-color;
+  }
+
+  #capstext{
+    text-transform: uppercase;
+    //font-weight: bold;
+    font-size: 120%;
+  }
+}
+
+#subteams {
+  padding-left: 8%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+
+  #title {
+    font-family: $title-font;
+    font-size: 225%;
+    padding-bottom: 15%;
+    //padding-top: 5%;
+    color: $logo-color;
+  }
+
+  #nocapstext{
+    //font-weight: bold;
+    font-size: 120%;
+  }
+}
+
+#involved {
+  background-color: #f7edee;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 8%;
+  color: $logo-color;
+  font-size: 200%;
+
+  #lolz{
+    padding-bottom: 1%;
+  }
+}
+
+#about {
+  background-color: $issue-bg;
+  box-shadow: inset 0 0 24px 0 $border-color;
+  padding-top: 3%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 2%;
+  font-family: $title-font;
+
+  #title {
+    font-family: $title-font;
+    font-size: 225%;
+    padding-bottom: 4%;
+    color: $logo-color;
+  }
+  #cover-cont {
+    img {
+      float: right;
+      box-shadow: 0 4px 16px 0 $border-color;
+      //width: 250px;
+      height: auto;
+    }
+  }
+  #membername {
+    font-family: $title-font;
+    font-size: 150%;
+    padding-top: 4%;
+  }
+  #titlename {
+    font-family: $title-font;
+    font-size: 120%;
+  }
+  #title-text {
+    color: $logo-color;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+}
+
+
+#featured {
+  background-color: $article-bg;
+  margin-top: 4%;
+}
+
+#toptitletext {
+  padding-bottom: 1%;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+
+  button {
+    width:120px;
+  }
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+#videotext{
+  margin-left: auto;
+  margin-right: auto;
+
+  button{
+    font-size: 14px;
+  }
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}

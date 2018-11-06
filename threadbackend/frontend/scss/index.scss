@@ -1,0 +1,81 @@
+@import 'base';
+
+#issue {
+    background-color: $issue-bg;
+    box-shadow: inset 0 0 24px 0 $border-color;
+    #cover-cont {
+	img {
+	    float: right;
+	    box-shadow: 0 4px 16px 0 $border-color;
+	    width: 40%;
+	    margin-top: 8%;
+	    margin-bottom: 8%;
+	}
+    }
+    #title-text {
+    	color: $logo-color;
+	padding-top: 7%;
+	padding-bottom: 7%;
+	font-weight: 900;
+    	#season {
+	    font-family: $title-font;
+	    font-size: 75%;
+	    line-height: 1em;
+	}
+	#title {
+	    font-family: $title-font;
+	    font-size: 200%;
+	    padding-bottom: 4%;
+	}
+	a {
+	    font-size: 125%;
+	    font-weight: 900;
+	    border: 4px solid $logo-color;
+	    border-radius: 8px;
+	    color: $logo-color;
+	}
+    }
+}
+
+#featured {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    width: 80%;
+    .carousel .carousel-inner .carousel-item {
+    	height: 400px;
+    }
+    img {
+    	height: 40%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+    }
+    #title {
+    	font-weight: 900;
+	font-size: 150%;
+	line-height: 1.5em;
+	text-shadow: 0 2px 7px 0 rgba(0,0,0,0.08);
+    }
+    #preview {
+        padding-top: 3%;
+        color: grey;
+	font-weight: 300;
+	font-size: 90%;
+	a {
+	    color: $logo-color;
+	}
+    }
+    #box {
+    	margin-top: 15%;
+    	height: 1%;
+	width: 18%;
+	background-color: $logo-color;
+    }
+    #by {
+    	padding-top: 1%;
+    	font-weight: 900;
+	font-size: 90%;
+	line-height: 1.5em;
+	text-shadow: 0 2px 7px 0 rgba(0,0,0,0.08);
+    }
+}

@@ -1,0 +1,119 @@
+{% extends "components/base.html" %}
+{% load static %}
+{% block style %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block title %}Thread{% endblock %}
+
+
+{% block body %}
+<!-- Issue -->
+<div class="container-fluid" id="issue">
+  <div class="row align-items-center">
+    <!-- Cover Image -->
+    <div class="col mr-3" id="cover-cont">
+      <!-- Gradient & Image -->
+      <img id="cover" src="{% static 'imgs/SS18.png' %}" alt="Cover">
+    </div>
+
+    <!-- Title Text -->
+    <div class="col" id="title-text">
+      <!-- Season -->
+      <div id="season">
+	SS2018
+      </div>
+      <!-- Title -->
+      <div id="title">
+	The Technology Issue
+      </div>
+      <!-- View button -->
+      <a class="btn btn-outline-light" href="issues/" role="button">VIEW</a>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Article -->
+<div class="container" id="featured">
+  <div class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators" >
+      <li data-target="#carouselExampleIndicators"  data-slide-to="0"  class="active" ></li>
+      <li data-target="#carouselExampleIndicators"  data-slide-to="1" ></li>
+      <li data-target="#carouselExampleIndicators"  data-slide-to="2" ></li>
+    </ol>
+    <div class="carousel-inner" >
+      <div class="carousel-item active" >
+	<div class="row">
+	  <div class="col">
+	    <img src="{% static 'imgs/SS18.png' %}" id="preview-img" alt="First slide" >
+	  </div>
+	  <div class="col">
+	    <div id="title">
+	      Titles get 2 lines, then they truncate lorem ipsum do ...
+	    </div>
+	    <div id="preview">
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis aliquam ut porttitor leo. Pretium viverra sus <a href="" id="cont">... CONTINUE</a>
+	    </div>
+	    <div id="box">
+	      
+	    </div>
+	    <div id="by">
+	      by Article Author
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <div class="carousel-item" >
+	<div class="row">
+	  <div class="col">
+	    <img src="{% static 'imgs/SS18.png' %}" id="preview-img" alt="First slide" >
+	  </div>
+	  <div class="col">
+	    <div id="title">
+	      Titles get 2 lines, then they truncate lorem ipsum do ...
+	    </div>
+	    <div id="preview">
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis aliquam ut porttitor leo. Pretium viverra sus <a href="" id="cont">... CONTINUE</a>
+	    </div>
+	    <div id="box">
+	      
+	    </div>
+	    <div id="by">
+	      by Article Author
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <div class="carousel-item" >
+	<div class="row">
+	  <div class="col">
+	    <img src="{% static 'imgs/SS18.png' %}" id="preview-img" alt="First slide" >
+	  </div>
+	  <div class="col">
+	    <div id="title">
+	      Titles get 2 lines, then they truncate lorem ipsum do ...
+	    </div>
+	    <div id="preview">
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis aliquam ut porttitor leo. Pretium viverra sus <a href="" id="cont">... CONTINUE</a>
+	    </div>
+	    <div id="box">
+	      
+	    </div>
+	    <div id="by">
+	      by Article Author
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <a class="carousel-control-prev"  href="#carouselExampleIndicators"  role="button"  data-slide="prev" >
+      <span class="carousel-control-prev-icon"  aria-hidden="true" ></span>
+      <span class="sr-only" >Previous</span>
+    </a>
+    <a class="carousel-control-next"  href="#carouselExampleIndicators"  role="button"  data-slide="next" >
+      <span class="carousel-control-next-icon"  aria-hidden="true" ></span>
+      <span class="sr-only" >Next</span>
+    </a>
+  </div>
+</div>
+{% endblock %}

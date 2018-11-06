@@ -1,0 +1,11 @@
+var bottom = $('nav').offset().top + $('nav').height();
+
+$(window).on('scroll', function() {
+    var stop = Math.round($(window).scrollTop());
+    if (stop > bottom) {
+	$('nav').addClass('pastNav');
+    }
+    else {
+	$('nav').removeClass('pastNav');
+    }
+});

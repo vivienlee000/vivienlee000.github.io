@@ -1,0 +1,180 @@
+{% extends "components/base.html" %}
+{% load static %}
+{% block style %}
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block title %}Thread{% endblock %}
+{% block body %}
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <!-- embed video using link, mp4 format-->
+      <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+      </video>
+      <div class="container h-100">
+        <div class="d-flex text-left h-100">
+          <div class="my-auto w-100 text-white" id="videotext">
+            <div id="toptitletext">
+              <div><h1>About Thread</h1></div>
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet mauris et magna consectetur convallis.</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2">
+                <button type="button" class="btn btn-outline-light">Our Mission</button>
+              </div>
+              <div class="col-sm-2">
+                <button type="button" class="btn btn-outline-light">Our E-Board</button>
+              </div>
+              <div class="col-sm-2">
+                <button type="button" class="btn btn-outline-light">Our Subteams</button>
+              </div>
+              <div class="col-sm-2">
+                <button type="button" class="btn btn-outline-light">Get Involved</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container-fluid" id="mission">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1 id="title">Our Mission</h1>
+          <div id="capstext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+        </div>
+
+
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula enim diam, at porttitor velit commodo quis.
+          Mauris est purus, malesuada ac semper ac, pharetra mollis quam. Etiam rhoncus, dolor non dignissim gravida,
+          eros sapien posuere lacus, sed finibus ex ex eu purus. Duis sit amet mauris et magna consectetur convallis.
+          Curabitur nec accumsan ex.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula enim diam, at porttitor velit commodo quis.
+          Mauris est purus, malesuada ac semper ac, pharetra mollis quam. Etiam rhoncus, dolor non dignissim gravida,
+          eros sapien posuere lacus, sed finibus ex ex eu purus. Duis sit amet mauris et magna consectetur convallis.
+          Curabitur nec accumsan ex.
+        </div>
+        <div class="col-sm-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula enim diam, at porttitor velit commodo quis.
+          Mauris est purus, malesuada ac semper ac, pharetra mollis quam. Etiam rhoncus, dolor non dignissim gravida,
+          eros sapien posuere lacus, sed finibus ex ex eu purus. Duis sit amet mauris et magna consectetur convallis.
+          Curabitur nec accumsan ex.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid" id="about">
+      <h1 class="text-center" id="title">Meet the E-Board</h1>
+
+      <div class="row">
+
+        <div class="col-lg-3 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/175x175" alt="">
+          <h3 id="membername">John Smith</h3>
+          <h4 id="titlename">Job Title</h4>
+          <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/175x175" alt="">
+          <h3 id="membername">John Smith</h3>
+          <h4 id="titlename">Job Title</h4>
+          <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/175x175" alt="">
+          <h3 id="membername">John Smith</h3>
+          <h4 id="titlename">Job Title</h4>
+          <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/175x175" alt="">
+          <h3 id="membername">John Smith</h3>
+          <h4 id="titlename">Job Title</h4>
+          <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/175x175" alt="">
+            <h3 id="membername">John Smith</h3>
+            <h4 id="titlename">Job Title</h4>
+            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/175x175" alt="">
+            <h3 id="membername">John Smith</h3>
+            <h4 id="titlename">Job Title</h4>
+            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/175x175" alt="">
+            <h3 id="membername">John Smith</h3>
+            <h4 id="titlename">Job Title</h4>
+            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/175x175" alt="">
+            <h3 id="membername">John Smith</h3>
+            <h4 id="titlename">Job Title</h4>
+            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid" id="subteams">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1 id="title">Our Teams.</h1>
+          <div id="nocapstext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula enim diam, at porttitor velit commodo quis.
+            Mauris est purus, malesuada ac semper ac, pharetra mollis quam. Etiam rhoncus, dolor non dignissim gravida,
+            eros sapien posuere lacus, sed finibus ex ex eu purus.
+          </div>
+        </div>
+
+
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <span class="border border-white">  <img src="http://placehold.it/175x175" alt=""> </span>
+            <span class="border border-white">  <img src="http://placehold.it/175x175" alt=""> </span>
+            <span class="border border-white">  <img src="http://placehold.it/175x175" alt=""> </span>
+          </div>
+          <div class="row">
+            <span class="border border-white">  <img src="http://placehold.it/175x175" alt=""> </span>
+            <span class="border border-white">  <img src="http://placehold.it/175x175" alt=""> </span>
+            <span class="border border-white">  <img src="http://placehold.it/175x175" alt=""> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="container-fluid" id="involved">
+      <h1 id="lolz">Interested in being a part of Thread? Enter your email here: </h1>
+    <!--<form>-->
+      <div class="form-group col-sm-4">
+        <input type="email" class="form-control" placeholder="name@example.com">
+      </div>
+      <button type="submit" class="btn btn-light mb-2">Submit</button>
+    <!--</form>-->
+</div>
+{% endblock %}
